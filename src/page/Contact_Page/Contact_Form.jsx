@@ -20,14 +20,16 @@ const Contact_Form = () => {
                                 <p className="text-sm"><span className="font-semibold">Mon - Thurs</span> : 5:30am - 12:00am (GMT+6) </p>
 
                                 <div className="flex flex-col pt-7">
-                                    <div className="bg-[#111827] p-2 pl-3 rounded-full mb-3 flex br_shadow items-center gap-3">
-                                        <FaWhatsapp className="bg-[#CA0945] text-5xl rounded-full p-2" /> <span>WhatsApp</span>
-                                    </div>
-                                    <div className="bg-[#111827] p-2 pl-3 rounded-full mb-3 flex br_shadow items-center gap-3">
-                                        <FaRegEnvelope className="bg-[#CA0945] text-5xl rounded-full p-2" /> <span>Email</span>
-                                    </div>
-                                    <div className="bg-[#111827] p-2 pl-3 rounded-full mb-3 flex br_shadow items-center gap-3">
-                                        <MdOutlineTextsms className="bg-[#CA0945] text-5xl rounded-full p-2" /> <span>Text sms</span>
+                                    <a href="https://wa.me/12390875" target='_blank' className="contact-socail-container">
+                                        <FaWhatsapp className="contact-icon" /> <span>WhatsApp</span>
+                                    </a>
+
+                                    <a href="mailto:bristi.get.contact@gmail.com" target='_blank' className="contact-socail-container">
+                                        <FaRegEnvelope className="contact-icon" /> <span>Email</span>
+                                    </a>
+
+                                    <div className="contact-socail-container">
+                                        <MdOutlineTextsms className="contact-icon" /> <span>+880 12390875</span>
                                     </div>
                                 </div>
                             </div>
@@ -38,12 +40,13 @@ const Contact_Form = () => {
                                 <p className="text-sm"><span className="font-semibold">Mon - Thurs</span> : 5:30am - 12:00am (GMT+6) </p>
 
                                 <div className="flex flex-col pt-7">
-                                    <div className="bg-[#111827] p-2 pl-3 rounded-full mb-3 flex br_shadow items-center gap-3">
-                                        <FaWhatsapp className="bg-[#CA0945] text-5xl rounded-full p-2" /> <span>WhatsApp</span>
-                                    </div>
-                                    <div className="bg-[#111827] p-2 pl-3 rounded-full mb-3 flex br_shadow items-center gap-3">
-                                        <IoMdCall className="bg-[#CA0945] text-5xl rounded-full p-2" /> <span>Phone Call</span>
-                                    </div>
+                                    <a href="https://wa.me/12390875" target='_blank' className="contact-socail-container">
+                                        <FaWhatsapp className="contact-icon" /> <span>WhatsApp</span>
+                                    </a>
+
+                                    <a href="tel:+4733378901" target='_blank' className="contact-socail-container">
+                                        <IoMdCall className="contact-icon" /> <span>+880 12390875</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +70,7 @@ const Contact_Form = () => {
 
                         <Section_Title
                             subTitle='Contact'
-                            title='Share Your Ideas.'></Section_Title>
+                            title='Get In Touch'></Section_Title>
 
                         <p>
                             <p className="mb-2">Got Ideas ? Let’s team up. Tell me about what you want to build. </p>
@@ -83,16 +86,16 @@ const Contact_Form = () => {
                             <p className='text-lg sm:text-xl  mb-9'>Submit  a  message : </p>
 
                             <div className="flex flex-col xs:flex-row items-center xs:gap-8">
-                                <input type="text" name="name" placeholder="Your Name" className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500   mb-5" />
-                                <input type="email" name="email" id="" placeholder="Your email" className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500    mb-5" />
+                                <input type="text" name="name" placeholder="Your Name" className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500   mb-5" autoComplete="off" />
+                                <input type="email" name="email" id="" placeholder="Your email" className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500    mb-5" autoComplete="off" />
                             </div>
-                            <textarea name="message" id="" placeholder="Your message..." className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500   mb-5"></textarea>
-                            <input type="submit" value="Submit" className="button-copy text-right block ml-auto" />
+                            <textarea name="message" id="" placeholder="Your message..." className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500   mb-5" autoComplete="off"></textarea>
+                            <input type="submit" value="Submit" className="contact-btn" />
                         </form>
 
 
                         {/* others info  */}
-                        <div className="mt-9">
+                        {/* <div className="mt-9">
 
                             <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight contact-t border-b-2 border-white border-dotted w-fit pb-2 mb-5 pr-5">
                                 Full Contact info
@@ -114,7 +117,7 @@ const Contact_Form = () => {
                                
                             </div>
 
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

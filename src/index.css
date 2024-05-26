@@ -10,7 +10,12 @@
     1.common css
     2. reuseable css
     3. Home Page
-        a. Home
+        logo
+         Home
+        About
+        skill
+        portfolio
+        Footer
  */
 /* ========================================  */
 
@@ -45,6 +50,7 @@ font-family: "Pacifico", cursive;
     .btn_shadow {
         @apply shadow-[8px_8px_35px_rgba(87,85,85,0.222)] rounded-3xl
     }
+    
     .sub-title {
         @apply font-['Miniver',_cursive] text-sm text-[#2CA024] tracking-[2px]
         
@@ -56,11 +62,15 @@ font-family: "Pacifico", cursive;
         @apply font-['Sedan_SC',_serif]
     }
     .button-copy {
-        @apply font-['Sedan_SC',_serif] border-none px-8 font-bold py-3 xs:py-4 text-[10px] text-nowrap sm:text-[16px]  text-[#CA0945]  rounded-xl btn_shadow capitalize
+        @apply font-['Sedan_SC',_serif] border border-transparent px-8 font-bold py-2 xs:py-3 text-[10px] text-nowrap sm:text-[16px]  text-[#CA0945]  rounded-xl btn_shadow capitalize
     }
 
     /* 3. Home Page
     -------------------------  */
+    /* logo  */
+    .logo {
+        @apply text-[#CA0945] hi text-lg sm:text-2xl tracking-[3px]
+    }
     /* Home  */
     h1 {
         @apply font-['Pacifico',_cursive]
@@ -71,8 +81,59 @@ font-family: "Pacifico", cursive;
     .h2 {
         @apply font-['Rancho',_cursive]
     }
+    .home-btn {
+        @apply border border-transparent px-8 font-bold py-3 xs:py-4 text-[10px] text-nowrap sm:text-[16px] uppercase text-[rgb(202,9,69)]  rounded-xl btn_shadow transition-all ease-in-out hover:border-[rgb(202,9,69)] hover:text-white duration-300
+    }
+
+
+    /* About  */
+    .about-social-link{
+        @apply border-2 border-[#CA0945] text-[#CA0945] rounded-full text-3xl sm:text-5xl p-1 sm:p-2 cursor-pointer transition-all ease-in-out hover:text-white hover:border-[#2CA024] duration-300
+    }
+
+    /* Skill  */
+
+    /* Portfolio  */
+    .protffollio-title {
+        @apply font-['Sedan_SC',_serif] text-[#CA0945] font-semibold text-lg
+    }
+    .portfolio-arrow {
+        @apply text-3xl font-bold text-[#CA0945] transition-all ease-in-out cursor-pointer hover:text-[#2CA024] duration-300
+    }
+
+    /* contact  */
+    .contact-btn {
+        @apply text-right block ml-auto button-copy transition-all ease-in-out hover:text-white hover:border-[#CA0945] duration-300
+    }
+    .contact-socail-container{
+        @apply bg-[#111827] p-2 pl-3 rounded-full mb-3 flex br_shadow items-center gap-3 cursor-pointer
+    }
+    .contact-icon{
+        @apply bg-[#CA0945] text-5xl rounded-full p-2
+    }
+    .contact-whatsapp{
+        @apply contact-icon
+    }
+
+    /* footer  */
+    .footer-logo{
+        @apply logo transition-all ease-in-out hover:text-white duration-300
+    }
+    .footer-social{
+        @apply outline-8 outline-double bg-[#CA0945] outline-[#2CA024] text-white rounded-full text-3xl sm:text-4xl p-1 sm:p-2 transition-all ease-out hover:outline-[#CA0945] hover:text-[#2CA024] hover:bg-white duration-300
+    }
+    
    
 }
-.protffollio-title {
-    @apply font-['Sedan_SC',_serif] text-[#CA0945] font-semibold text-lg
-}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
+import Contact_Page from "../Contact_Page/Contact_Page";
 import About from "./About/About";
-import Contact from "./Contact/Contact";
+// import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import Portfolio from "./Portfolio/Portfolio";
 import Skill from "./Skill/Skill";
@@ -12,7 +13,8 @@ const Home_Page = () => {
             <About></About>
             <Skill></Skill>
             <Portfolio></Portfolio>
-            <Contact></Contact>
+            {/* <Contact></Contact> */}
+            <Contact_Page></Contact_Page>
         </div>
     );
 };

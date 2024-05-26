@@ -5,7 +5,7 @@ import vdo from '../../../assets/vdo/vdo.mp4'
 
 const Skill = () => {
     return (
-        <div className=" pt-10 sm:pt-24 pb-10 sm:pb-24 mx-2 lg:mx-[46px] xl:mx-[113px] border-b-2 border-black border-dotted">
+        <div id="skill" className=" pt-10 sm:pt-24 pb-10 sm:pb-24 mx-2 lg:mx-[46px] xl:mx-[113px] border-b-2 border-black border-dotted">
             <Section_Title
                 subTitle='My Skill  '
                 title='solid foundation & Expertise in'

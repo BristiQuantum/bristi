@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+
+
+/* contact  */
+.contact-socail-container:hover .contact-whatsapp{
+    color: #000 !important;
+}
+
+
