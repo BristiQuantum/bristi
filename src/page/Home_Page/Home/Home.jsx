@@ -32,9 +32,9 @@ const Home = () => {
                         <p className='text-lg sm:text-xl capitalize mb-5'>Download my resume :</p>
                        
                         <div className=" flex items-center justify-center gap-5">
-                            <a href="https://drive.google.com/file/d/1QXqYlZ5VAVupRGSjxwD0-5ncJ23_bbKu/view?usp=drive_link" target='_blank' className='home-btn'>Download</a>
+                            <a href="https://drive.google.com/file/d/1QXqYlZ5VAVupRGSjxwD0-5ncJ23_bbKu/view?usp=drive_link" target='_blank' className='home-btn animate__animated animate__backInLeft animate__delay-2s'>Download</a>
                             
-                            <a href="#contact" className='home-btn'>Contact Me</a>
+                            <a href="#contact" className='home-btn animate__animated animate__backInLeft animate__delay-1s'>Contact Me</a>
                         </div>
                     </div>
                 </div>

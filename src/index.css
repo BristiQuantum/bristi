@@ -82,7 +82,7 @@ font-family: "Pacifico", cursive;
         @apply font-['Rancho',_cursive]
     }
     .home-btn {
-        @apply border border-transparent px-8 font-bold py-3 xs:py-4 text-[10px] text-nowrap sm:text-[16px] uppercase text-[rgb(202,9,69)]  rounded-xl btn_shadow transition-all ease-in-out hover:border-[rgb(202,9,69)] hover:text-white duration-300
+        @apply border border-transparent px-8 font-bold py-3 xs:py-4 text-[10px] text-nowrap sm:text-[16px] uppercase text-[rgb(202,9,69)]  rounded-xl btn_shadow transition-all ease-in-out hover:border-[rgb(202,9,69)] hover:text-white duration-300 
     }
 
 
