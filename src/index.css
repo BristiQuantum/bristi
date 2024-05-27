@@ -114,6 +114,18 @@ font-family: "Pacifico", cursive;
     .contact-whatsapp{
         @apply contact-icon
     }
+    .contact-form {
+        @apply bg-[#111827] p-8 rounded-3xl mt-10
+    }
+    .contact-group{
+        @apply flex flex-col xs:flex-row items-center xs:gap-8
+    }
+    .input{
+        @apply box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500   mb-5
+    }
+    .text-area {
+        @apply box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500   mb-5
+    }
 
     /* footer  */
     .footer-logo{

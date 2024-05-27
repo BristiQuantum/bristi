@@ -2,9 +2,58 @@ import { FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
 import Section_Title from "../component/Section_Title/Section_Title";
 import { MdOutlineTextsms } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from "sweetalert2";
+
 
 
 const Contact_Form = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            // .sendForm('service_id', 'template_id', form.current, {
+            //     publicKey: 'public_key',
+            // })
+
+            emailjs.sendForm(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                form.current,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            ) 
+
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    Swal.fire({
+                        title: 'success !',
+                        text: 'message send successfully ',
+                        icon: 'success',
+                        confirmButtonText: 'ok'
+                    })
+
+                    e.target.reset()
+
+                },
+                // eslint-disable-next-line no-unused-vars
+                (error) => {
+                    // console.log('FAILED...', error.text);
+
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'something went wrong ! please try again later.',
+                        icon: 'error',
+                        confirmButtonText: 'ok'
+                    })
+                },
+            );
+    };
+
     return (
         <div>
             <div className="px-2 xs:px-4 mx-auto sm:px-8 pt-24 pb-10 sm:pb-24">
@@ -81,15 +130,18 @@ const Contact_Form = () => {
 
                         {/* form 
                             --------------------- */}
-                        <form action="" className="bg-[#111827] p-8 rounded-3xl mt-10">
+                        <form ref={form} onSubmit={sendEmail} action="" className="contact-form">
 
                             <p className='text-lg sm:text-xl  mb-9'>Submit  a  message : </p>
 
-                            <div className="flex flex-col xs:flex-row items-center xs:gap-8">
-                                <input type="text" name="name" placeholder="Your Name" className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500   mb-5" autoComplete="off" />
-                                <input type="email" name="email" id="" placeholder="Your email" className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500    mb-5" autoComplete="off" />
+                            <div className="contact-group">
+                                <input type="text" name="user_name" placeholder="Your Name" className="input" autoComplete="off" />
+
+                                <input type="email" name="user_email" id="" placeholder="Your email" className="input" autoComplete="off" />
                             </div>
-                            <textarea name="message" id="" placeholder="Your message..." className="box-border w-full p-3 pl-5 rounded-md focus:outline-none bg-transparent border border-[#ca09466f] placeholder:text-xs placeholder:text-gray-500 focus:text-[#CA0945] focus:border-gray-500   mb-5" autoComplete="off"></textarea>
+
+                            <textarea name="message" id="" placeholder="Your message..." className="text-area" autoComplete="off"></textarea>
+
                             <input type="submit" value="Submit" className="contact-btn" />
                         </form>
 
