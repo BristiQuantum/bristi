@@ -12,12 +12,12 @@ const About = () => {
         <div id='about' className="w-full max-w-7xl px-2 xs:px-4 mx-auto sm:px-8 mt-10 xs:mt-24 pb-10 sm:pb-24 border-b-2 border-black border-dotted  ">
             <blockquote className="relative grid items-center shadow-xl md:grid-cols-3 rounded-xl mb-14">
                 <img
-                    className="hidden object-cover w-full h-full rounded-l-xl md:block"
+                    className="hidden object-cover w-full h-full rounded-l-xl md:block animate__animated animate__backInLeft "
                     style={{ clipPath: "polygon(0 0%, 100% 0%, 75% 100%, 0% 100%)" }}
                     src={bristi}
                     alt="John Doe"
                 />
-                <article className="relative xs:pl-6 pr-0 lg:p-8 md:col-span-2">
+                <article className="relative xs:pl-6 pr-0 lg:p-8 md:col-span-2 animate__animated animate__backInRight">
 
                     <Section_Title
                         subTitle='About me'

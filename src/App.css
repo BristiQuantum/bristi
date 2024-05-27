@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 html {
     scroll-behavior: smooth !important;
 }
@@ -16,10 +9,15 @@ html {
 /* animated css 
 ----------------------- */
 /* All delay classes will take half the time to start */
-:root {
-    --animate-delay-1s: 0s;
-    --animate-delay-2s: 0.1s;
-    /* animate__delay-2s */
-  }
+/* Custom delay classes */
+.animate__delay-0-2s {
+    animation-delay: 0.2s;
+}
 
+.animate__delay-0-5s {
+    animation-delay: 0.5s;
+}
 
+.animate__delay-0-8s {
+    animation-delay: 0.8s;
+}
