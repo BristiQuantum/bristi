@@ -42,7 +42,7 @@ const Contact_Form = () => {
                 },
                 // eslint-disable-next-line no-unused-vars
                 (error) => {
-                    // console.log('FAILED...', error.text);
+                    console.log('FAILED...', error.text);
 
                     Swal.fire({
                         title: 'Error!',
